@@ -1,0 +1,23 @@
+{
+	"private": true,
+	"dependencies": {
+		"express": "3.2.6",
+		"jade": "0.31.2",
+		"dive": "0.3.0",
+		"schemajs": "0.1.10",
+		"underscore": "1.5.1",
+		"ejdb": "1.1.13-1",
+		"modella": "0.1.0",
+		"modella-validators": "0.0.7",
+		"modella-ejdb": "0.0.1"
+	},
+	"devDependencies": {
+		"grunt": "0.4.1",
+		"grunt-contrib-compass": "0.2.0",
+		"grunt-contrib-coffee": "0.7.0",
+		"grunt-contrib-watch": "0.4.4",
+		"matchdep": "0.1.2",
+		"coffee-script": "1.6.3",
+		"grunt-cli": "0.1.9"
+	}
+}

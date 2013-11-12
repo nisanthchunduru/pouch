@@ -1,0 +1,7 @@
+node_modules
+pouch.ejdb*
+assets/bower_components
+assets/javascripts/compiled
+assets/stylesheets/compiled
+.sass-cache
+npm-debug.log

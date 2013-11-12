@@ -1,0 +1,42 @@
+doctype 5
+
+html
+  head
+    title Pouch
+    link(rel='stylesheet', href='/stylesheets/compiled/index.css')
+
+  body
+    section#notesFormView
+      
+    script#notesFormTemplate(type='text/template')
+      form
+        textarea.text(rows="1", placeholder="Enter Note")
+
+    #container
+      section#notesView
+
+      script#noteViewTemplate(type='text/template')
+        p <%- text %>
+
+        footer
+          time <%= moment(createdAt).format('MMM D YYYY, HH:mm') %>
+          span.bullet •
+          a Delete
+
+    script(type='text/javascript', src='/bower_components/jquery/jquery.min.js')
+    script(type='text/javascript', src='/bower_components/jquery-autosize/jquery.autosize-min.js')
+    script(type='text/javascript', src='/javascripts/vendor/mutation-summary/mutation_summary.js')
+    script(type='text/javascript', src='/javascripts/vendor/jquery-mutation-summary/src/jquery.mutation-summary.js')
+    script(type='text/javascript', src='/bower_components/underscore/underscore-min.js')
+    script(type='text/javascript', src='/bower_components/moment/min/moment.min.js')
+    script(type='text/javascript', src='/bower_components/backbone/backbone-min.js')
+    script(type='text/javascript', src='/bower_components/backbone-validation/dist/backbone-validation-min.js')
+    script(type='text/javascript', src='/bower_components/backbone.paginator/dist/backbone.paginator.min.js')
+    script(type='text/javascript', src='/bower_components/backbone.keys/dist/backbone.keys.min.js')
+    script(type='text/javascript', src='/bower_components/backbone.marionette/lib/backbone.marionette.min.js')
+    script(type='text/javascript', src='/javascripts/compiled/models/note.js')
+    script(type='text/javascript', src='/javascripts/compiled/collections/notes.js')
+    script(type='text/javascript', src='/javascripts/compiled/views/notesFormView.js')
+    script(type='text/javascript', src='/javascripts/compiled/views/noteView.js')
+    script(type='text/javascript', src='/javascripts/compiled/views/notesView.js')
+    script(type='text/javascript', src='/javascripts/compiled/index.js')

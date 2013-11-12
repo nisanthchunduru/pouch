@@ -1,0 +1,147 @@
+@import "compass/reset"
+@import "compass/css3/box-sizing"
+@import "compass/css3/font-face"
+
+@include font-face("Raleway Medium", font-files("raleway/Raleway-Medium-webfont.ttf"))
+
+*
+  // Border box model
+  @include box-sizing(border-box)
+
+textarea
+  margin: 0
+  resize: none
+
+  &:focus
+    outline: none
+
+div
+  margin:
+    left: auto
+    right: auto
+
+input
+  padding: 0
+
+textarea, input, section, footer
+  border-style: solid
+
+textarea, input
+  background-color: white
+
+a
+  text-decoration: none
+  color: #0084B4
+
+$container-width: 560px
+
+header#header
+  width: 100%
+  height: 74px
+  margin:
+    left: auto
+    right: auto
+  // margin-bottom: 30px
+
+  // background-color: #414140
+  background-color: rgb(65, 65, 64)
+
+  h1
+    // text-align: center
+    // margin-left: 256px
+    width: $container-width
+    margin: auto
+    line-height: 74px
+
+    display: block
+
+    font:
+      // family: "Brandon Grotesque Light"
+      family: "Museo 300"
+      // size: 40px
+      size: 33px
+    // color: rgb(68, 68, 68)
+    color: #ffffff
+
+    // background-color: #17476b
+    // line-height: 96px
+    // line-height: 62px
+    left: 0
+    right: 0
+
+#container
+  width: $container-width
+  margin-bottom: 60px
+
+$noteText-font-size: 17px
+$noteText-line-height: 20px
+$noteText-font-family: "Raleway Medium"
+
+@mixin noteText-defaults
+  font:
+    family: $noteText-font-family
+    size: $noteText-font-size
+  line-height: $noteText-line-height
+  color: rgb(51, 51, 51)
+
+  white-space: pre-wrap
+
+#notesFormView
+  margin:
+    left: auto
+    right: auto
+  $padding-top: 10px
+  padding:
+    top: $padding-top
+    bottom: $padding-top
+
+  background-color: #f6f6f6
+
+  form
+    width: $container-width
+    margin: auto
+
+    textarea.text
+      $padding: 8px
+      $border-width: 1px
+      height: $noteText-line-height + (2 * ($padding + $border-width))
+      width: $container-width
+      padding: $padding
+
+      // Remove inconsistent bottom margin
+      display: block
+
+      @include noteText-defaults
+
+      border:
+        width: $border-width
+        color: #cccccc
+
+.noteView
+  margin-top: 30px
+  padding: 8px
+
+  &:first-child
+    margin-top: 20px
+
+  p
+    // Hack: Center block elements of dynamic width
+    display: table
+    margin: 0 auto
+
+  @include noteText-defaults
+
+  footer
+    margin-top: 5px
+    text-align: center
+
+    font-size: 14px
+    color: rgb(130, 130, 130)
+
+    span.bullet
+      display: inline-block
+      margin: 0 8px
+      font-family: none
+
+    a
+      cursor: pointer
