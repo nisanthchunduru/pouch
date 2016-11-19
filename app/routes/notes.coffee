@@ -1,17 +1,19 @@
 Note = require (require 'path').join '..', 'models', 'note.coffee'
-db = require (require 'path').join '..', '..', 'db'
+# db = require (require 'path').join '..', '..', 'db'
 
 module.exports = (app) ->
 
   app.post '/notes', (req, res) ->
     text = req.body.text
-    note = new Note text: text, createdAt: do Date.now
+    note = new Note(text: text, createdAt: Date.now())
 
-    note.save (err) ->
+    note.save (err, saved_note) ->
       return res.send 500 if err
       
-      res.json note.attrs
+      res.json saved_note.attrs
 
   app.del '/notes/:id', (req, res) ->
-    db.remove 'Note', req.params.id, (err) ->
-      res.send (if err then 404 else 204)
+    note = new Note(_id: req.params.id)
+    note.remove (err) ->
+      res.send (if err then 404 else 204)  
+    

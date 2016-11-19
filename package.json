@@ -6,10 +6,9 @@
 		"dive": "0.3.0",
 		"schemajs": "0.1.10",
 		"underscore": "1.5.1",
-		"ejdb": "1.1.13-1",
-		"modella": "0.1.0",
+		"modella": "0.2.14",
 		"modella-validators": "0.0.7",
-		"modella-ejdb": "0.0.1"
+		"modella-nedb": "latest"
 	},
 	"devDependencies": {
 		"grunt": "0.4.1",

@@ -4,6 +4,7 @@ Note = require (require 'path').join '..', '..', 'models', 'note.coffee'
 
 module.exports = (app) ->
 
+  # Middleware to validate request params
   middleware = [
     do ->
       schema = schemajs.create
@@ -38,7 +39,8 @@ module.exports = (app) ->
   ]
 
   app.get '/notes', middleware, (req, res) ->
-    Note.all {}, req.query.hints, (err, all) ->
+    # Note.all req.query.hints, (err, all) ->
+    Note.all {}, (err, all) ->
       return res.send 500 if err
 
       res.json all.map (note) -> note.attrs
