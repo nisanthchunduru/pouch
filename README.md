@@ -1,13 +1,15 @@
-# pouch
+# Pouch
 Pouch is an app for your note taking needs
 
 ![Screenshot](http://i.imgur.com/G5SRLdf.png)
 
-Pouch is a hobby project from my college days. I wrote Pouch to test my understanding of [Express](http://expressjs.com/) and [Backbone](http://backbonejs.org/). Being a hobby project, Pouch is very bare bones. You're welcome to browse the codebase and try the app, however I recommend using a real note taking app like [Wunderlist](https://www.wunderlist.com/) etc. for your note taking needs.
+## The story behind Pouch
 
-## Installation
+I built Pouch in my freshman year when there weren't many note taking apps around. I built it to solve my own note taking needs and to test my understanding of [Express](http://expressjs.com/) and [Backbone](http://backbonejs.org/) (These frameworks had just been released then and Single Page Applications were at their nascency). I used Pouch to manage my notes, todos and bookmarks in the years that followed. It even got me my first job 😉
 
-Run the following commands in your terminal
+## How do I install it?
+
+Run the commands below in your terminal
 
 ```
 mkdir ~/code
@@ -24,4 +26,10 @@ grunt
 coffee app.coffee
 ```
 
-and then visit [localhost:9393](http://localhost:9393/)
+and visit [localhost:9393](http://localhost:9393/)
+
+## Should I use Pouch?
+
+No.
+
+Thanks for considering using it though. While Pouch is very useful, its bare bones. They are many mature note taking apps today. I recommend [Simplenote](https://simplenote.com).
