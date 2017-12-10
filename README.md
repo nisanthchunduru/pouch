@@ -5,7 +5,7 @@ Pouch is an app for your note taking needs
 
 ## The story behind Pouch
 
-I built Pouch in my freshman year when there weren't many note taking apps around. I built it to solve my own note taking needs and to test my understanding of [Express](http://expressjs.com/) and [Backbone](http://backbonejs.org/) (These frameworks had just been released then and Single Page Applications were at their nascency). I used Pouch to manage my notes, todos and bookmarks in the years that followed. It even got me my first job 😉
+I built Pouch in my junior year when there weren't many note taking apps around. I built it to solve my own note taking needs and to test my understanding of [Express](http://expressjs.com/) and [Backbone](http://backbonejs.org/) (These frameworks had just been released then and Single Page Applications were at their nascency). I used Pouch to manage my notes, todos and bookmarks in the years that followed. It even got me my first job 😉
 
 ## How do I install it?
 
