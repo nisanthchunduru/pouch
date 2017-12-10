@@ -32,4 +32,4 @@ and visit [localhost:9393](http://localhost:9393/)
 
 No.
 
-Thanks for considering using it though. While Pouch is very useful, its bare bones. They are many mature note taking apps today. I recommend [Simplenote](https://simplenote.com).
+Thanks for considering using it though. While Pouch is very useful, its bare bones. They are many mature note taking apps available today. I recommend [Simplenote](https://simplenote.com).
